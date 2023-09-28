@@ -24,7 +24,6 @@ export function Game() {
     isGameStarted,
   } = useContext(gameContext);
 
-
   const updateGameMatrix = (column: number, row: number, symbol: "x" | "o") => {
     const newMatrix = [...matrix];
 

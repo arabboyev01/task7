@@ -19,7 +19,8 @@ function App() {
 
   useEffect(() => {
     connectSocket()
-    .then((data) => console.log(data)).catch(err => console.log(err))
+    .then((data) => console.log(data))
+        .catch(err => console.log(err))
   }, []);
 
   const gameContextValue: IGameContextProps = {

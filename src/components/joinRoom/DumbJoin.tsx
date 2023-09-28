@@ -18,4 +18,4 @@ const DumbJoin: React.FC<any> = ({joinRoom, roomName, handleRoomNameChange, isJo
     </form>
 )
 
-export default DumbJoin
+export default DumbJoin;

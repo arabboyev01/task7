@@ -13,11 +13,7 @@ const DumbGame : React.FC<any>= ({ isGameStarted, isPlayerTurn, playerSymbol, up
             {row.map((column: any, columnIdx: any) => (
               <Cell onClick={() => updateGameMatrix(columnIdx, rowIdx, playerSymbol)}>
                 {column && column !== "null" ? (
-                  column === "x" ? (
-                    <X />
-                  ) : (
-                    <O />
-                  )
+                  column === "x" ? <X /> : <O />
                 ) : null}
               </Cell>
             ))}
